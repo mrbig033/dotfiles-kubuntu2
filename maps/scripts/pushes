@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+git -C "$HOME"/.doom.d/ add -A
+git -C "$HOME"/Dropbox/ add -A
+git -C "$HOME"/dotfiles/ add -A
+
+git -C "$HOME"/.doom.d/ commit -am "auto commit" 
+git -C "$HOME"/Dropbox/ commit -am "auto commit"
+git -C "$HOME"/dotfiles/ commit -am "auto commit"
+
+git -C "$HOME"/.doom.d/ push
+git -C "$HOME"/Dropbox/ push
+git -C "$HOME"/dotfiles/ push

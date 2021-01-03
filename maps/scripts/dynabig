@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+"$HOME"/dotfiles/maps/dynalist-1.0.5/dynalist --force-device-scale-factor=1.5 %U

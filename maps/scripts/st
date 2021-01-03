@@ -1,0 +1,5 @@
+#!/bin/bash
+
+setxkbmap -option -layout br
+xmodmap /home/jones/maps/scripts/xmodmaps
+emacs --daemon

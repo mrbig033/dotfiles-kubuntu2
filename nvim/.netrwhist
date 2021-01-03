@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/jones/.emacs_anywhere/bin'
+let g:netrw_dirhist_8='/home/jones/.texpander'
+let g:netrw_dirhist_7='/home/jones/.config/autostart'
+let g:netrw_dirhist_6='/media/jerry/h1/dotfiles/scripts/cline_scripts'
+let g:netrw_dirhist_5='/home/jerry/dotfiles/scripts/keyboard/keyboard-default'
+let g:netrw_dirhist_4='/home/jerry/dotfiles/.texpander'
+let g:netrw_dirhist_3='/home/jerry/will/bash_completion.d'
+let g:netrw_dirhist_2='/home/jerry/Documents/Org/Data/.t_tasks'
+let g:netrw_dirhist_1='/home/jerry/dotfiles/scripts'

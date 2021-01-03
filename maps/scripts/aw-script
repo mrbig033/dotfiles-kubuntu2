@@ -1,0 +1,3 @@
+#!/bin/bash
+
+afterwriting --source "$1" --pdf "$2".pdf

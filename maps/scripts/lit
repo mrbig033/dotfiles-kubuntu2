@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+arg=${1:-foo}
+clear
+emacsclient --create-frame  -nw "$arg"

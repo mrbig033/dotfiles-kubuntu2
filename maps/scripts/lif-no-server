@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+clear
+emacsclient --no-wait --create-frame

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+/opt/RememberTheMilk/rememberthemilk --force-device-scale-factor=1.5 %U

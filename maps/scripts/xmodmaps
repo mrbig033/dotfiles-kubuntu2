@@ -1,0 +1,16 @@
+! {{{ caps to control
+clear lock
+clear control
+keycode 66 = Control_L
+add control = Control_L Control_R
+! }}}
+! {{{ esc send caps
+! keycode 9 = Caps_Lock
+
+! {{{ tab to alt
+! keycode 64 = Tab
+! keycode 23 = Alt_L
+! }}}
+
+! Pause to Alt_Gr
+keycode 108 = Pause

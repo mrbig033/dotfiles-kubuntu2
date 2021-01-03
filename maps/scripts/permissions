@@ -1,0 +1,15 @@
+#!/bin/bash
+
+clear
+printf "\n   All permissions in this folder will be given to you." &&
+    printf "\n   All files will become executables.\n\n" &&
+    printf "\n   This could REALLY fuck up your system.\n\n" &&
+    read -rp "   PRESS ENTER TO CONTINUE" &&
+    read -rp "   ARE YOU SURE? " &&
+    read -rp "   LAST CHANCE " &&
+    sudo delayed chmod a+x ./*
+sudo delayed chown -Rhc "$USER" "$PWD"
+sudo delayed chmod -Rc 755 "$PWD"
+sudo delayed chmod -R g+s "$PWD"
+clear
+ls --color=always

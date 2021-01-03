@@ -1,0 +1,14 @@
+#!/bin/bash
+
+clear
+echo ""
+echo "#adding all files#"
+echo ""
+git add -A
+echo ""
+echo "#commiting and pushing"#
+echo ""
+echo "auto commit"
+echo ""
+git commit -am "auto commit" && git push
+echo ""

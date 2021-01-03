@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# xfce4-terminal --hide-menubar --hide-borders --hide-toolbar --hide-scrollbar --command="nvim -u /home/jones/.config/nvim-mini/init.vim"
+xfce4-terminal --hide-borders --hide-toolbar --hide-scrollbar --command="nvim -u /home/jones/.config/nvim-mini/init.vim"

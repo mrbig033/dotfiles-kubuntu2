@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+/home/jones/.nimble/bin/ntangle "$HOME"/.doom.d/config.org

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+clear
+echo ""
+apt-cache show "$*" | head --lines 3
+echo ""

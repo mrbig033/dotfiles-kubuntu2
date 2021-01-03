@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+clear
+sudo delayed chmod 777 "$HOME"/.doom.d/*.org "$HOME"/.doom.d/*.el

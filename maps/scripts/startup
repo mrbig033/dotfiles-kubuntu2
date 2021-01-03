@@ -1,0 +1,5 @@
+#!/bin/bash
+
+unclutter -idle 1 &
+xcape -t 200 -e 'Control_L=Escape'
+xset r rate 200 60

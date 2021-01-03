@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+
+# MY VARIABLES
+
+export PATH=$PATH:$HOME/maps/scripts
+export PATH=$PATH:$HOME/.nimble/bin
+
+export MANPAGER="nvim -c 'set ft=man' -"
+
+# HOMEBREW
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# cd and list
+e() {
+        local dir="$1"
+        local dir="${dir:=$HOME}"
+        if [[ -d "$dir" ]]; then
+                cd "$dir" >/dev/null; clear; ls --color=auto
+        else
+                echo "bash: cdls: $dir: Directory not found"
+        fi
+}
+
+# mkdir and cd
+
+mcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1" &&
+      clear
+}
+
+# MY ALIASES
+
+alias sudo='sudo delayed'
+alias hosts='clear && sudo nvim /etc/hosts'
+alias ni='nvim -u /home/jones/.config/nvim-mini/init.vim'
+alias eb='clear && emacs --debug-init'
+alias k='/home/jones/dotfiles/maps/scripts/k'
+alias xc="dirs +0 | tr -d '\n' | xclip -selection clipboard"
+alias xC='echo -n "$PWD" | xclip -selection clipboard'
+alias ko='sudo delayed kill -9'
+alias h='hugo'
+alias wg='wget'
+alias d='dolphin . &'
+alias die='pkill -fi emacs'
+alias br='brew'
+alias plasma-settings='clear && systemsettings5 &'
+alias da='clear && date'
+alias key='clear && xbindkeys -k'
+alias k9='clear && kill -9'
+alias lo='sudo delayed updatedb && locate'
+alias pk='pkill -fi'
+alias ep='clear && ps ax | grep --invert-match grep | grep emacs'
+alias py='clear && python3 -q'
+alias aw='/home/jones/maps/scripts/kbd/aw-script'
+alias x='xclip -selection clipboard'
+alias n='nvim'
+alias q='exit'
+# source https://stackoverflow.com/a/28887243/9509067
+alias mv-sub-here='mv */* .'
+alias only-owner='chmod go-rwx'
+alias cax='chmod a+x'
+alias rkt='clear && racket'
+alias ai='sudo delayed apt-fast install -y'
+alias ais='sudo delayed apt --simulate install -y'
+alias install='sudo delayed apt -y install'
+alias as='aptitude search'
+alias a='cd ~/.doom.d && clear && ls'
+alias box='e ~/Dropbox'
+alias doom='/home/jones/.emacs.d/bin/doom'
+alias ds='clear && /home/jones/.emacs.d/bin/doom sync'
+alias dss='clear && /home/jones/.emacs.d/bin/doom sync && emacs &'
+alias dup='clear && doom upgrade -f'
+alias ss='source ~/.bashrc'
+alias r='clear && cd -'
+alias ra='clear && ranger_cd'
+alias c='clear'
+alias cc='clear && ls -A'
+alias w='cd .. && clear && ls'
+alias bc='clear && nvim ~/.bash_custom ~/.bashrc'
+alias nv='clear && nvim ~/.config/nvim/*vim'
+alias bh='bash-it help'
+alias bi='bash-it'
+alias j='fasd_cd -d'
+alias tp='trash-put'
+alias trash='trash-put'
+alias empty='trash-empty'
+alias restore='trash-restore'
+alias start-sensors='sudo delayed service kmod start'
+alias sym='ln -rs'
+alias ddu='du --summarize --human-readable'
+alias poff='sudo delayed shutdown -h now'
+alias apu='clear && sudo delayed apt -y update'
+alias appu='clear && sudo delayed apt -y update && sudo delayed apt -y dist-upgrade && sudo delayed apt -y autoremove && sudo delayed apt -y autoclean'
+alias md='mkdir -p'
+alias mkdir='mkdir -p'
