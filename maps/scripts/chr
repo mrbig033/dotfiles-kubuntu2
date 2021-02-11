@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-clear
 sudo delayed chmod 700 "$HOME"/.doom.d/*.org "$HOME"/.doom.d/*.el
+sudo delayed chown --changes root "$HOME"/.doom.d/*.el "$HOME"/.doom.d/config.org

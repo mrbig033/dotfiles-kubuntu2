@@ -77,6 +77,7 @@ source "$BASH_IT"/bash_it.sh
 
 source /usr/share/doc/ranger/examples/shell_automatic_cd.sh
 bind '"\C-o":"\C-a\C-kranger_cd\C-m\C-l"'
+bind '"\C-y":"\C-a\C-kclear && python3 -q\C-m\C-l"'
 # FZF
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

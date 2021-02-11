@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-clear
-sudo delayed chmod 777 "$HOME"/.doom.d/*.org "$HOME"/.doom.d/*.el
+sudo delayed chmod 777 "$HOME"/Dropbox/emacs/doom.d/*.org "$HOME"/Dropbox/emacs/doom.d/*.el
+sudo delayed chown --recursive --changes "$USER" "$HOME"/.doom.d/*.el "$HOME"/.doom.d/config.org                   

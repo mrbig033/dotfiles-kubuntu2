@@ -84,6 +84,9 @@ nnoremap <silent> - :silent! helpclose<cr>
 nnoremap <silent> <expr> j (v:count? 'j' : 'gj')
 nnoremap <silent> <expr> k (v:count? 'k' : 'gk')
 " }}}
+" esc with jk
+inoremap jk <esc>
+inoremap kj <esc>
 " {{{ editing
 " clean word list
 nnoremap <leader>c1 :g/^\D\D\D$/d<cr>
